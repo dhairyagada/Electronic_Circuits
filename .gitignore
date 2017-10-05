@@ -2,4 +2,5 @@
 *.cmp
 *.bak
 *.gbr
-*.lib
+*.kicad_pcb-bak
+*.xml
