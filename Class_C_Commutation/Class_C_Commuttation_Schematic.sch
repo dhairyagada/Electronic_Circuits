@@ -28,6 +28,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:Class_C_Commuttation_Schematic-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -257,28 +258,6 @@ Wire Wire Line
 Wire Wire Line
 	8550 5600 8550 5200
 Connection ~ 8500 5600
-$Comp
-L Q_Thyristor_AGK D5
-U 1 1 59E19299
-P 5000 3700
-F 0 "D5" H 5075 3725 50  0000 L CNN
-F 1 "Q_Thyristor_AGK" H 5075 3650 50  0000 L CNN
-F 2 "Opto-Devices:IRReceiver_Vishay_MINICAST-3pin" V 5000 3700 50  0001 C CNN
-F 3 "" V 5000 3700 50  0001 C CNN
-	1    5000 3700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Q_Thyristor_AGK D6
-U 1 1 59E19844
-P 6750 3650
-F 0 "D6" H 6825 3675 50  0000 L CNN
-F 1 "Q_Thyristor_AGK" H 6825 3600 50  0000 L CNN
-F 2 "Opto-Devices:IRReceiver_Vishay_MINICAST-3pin" V 6750 3650 50  0001 C CNN
-F 3 "" V 6750 3650 50  0001 C CNN
-	1    6750 3650
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	5000 3550 5000 3350
 Wire Wire Line
@@ -362,4 +341,26 @@ Wire Wire Line
 Wire Wire Line
 	8000 5800 8000 5600
 Connection ~ 8000 5600
+$Comp
+L Q_Thyristor_KAG D7
+U 1 1 59E1BB8A
+P 5000 3700
+F 0 "D7" H 5075 3725 50  0000 L CNN
+F 1 "Q_Thyristor_KAG" H 5075 3650 50  0000 L CNN
+F 2 "Opto-Devices:IRReceiver_Vishay_MINICAST-3pin" V 5000 3700 50  0001 C CNN
+F 3 "" V 5000 3700 50  0001 C CNN
+	1    5000 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_Thyristor_KAG D8
+U 1 1 59E1BEC7
+P 6750 3650
+F 0 "D8" H 6825 3675 50  0000 L CNN
+F 1 "Q_Thyristor_KAG" H 6825 3600 50  0000 L CNN
+F 2 "Opto-Devices:IRReceiver_Vishay_MINICAST-3pin" V 6750 3650 50  0001 C CNN
+F 3 "" V 6750 3650 50  0001 C CNN
+	1    6750 3650
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC

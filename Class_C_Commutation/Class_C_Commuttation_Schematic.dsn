@@ -21,7 +21,7 @@
       )
     )
     (boundary
-      (rect pcb 12550 10945 223670 -197635)
+      (rect pcb 63290 -21150 198330 -189770)
     )
     (via "Via[0-1]_600:400_um")
     (rule
@@ -33,36 +33,36 @@
   )
   (placement
     (component LEDs:LED_D5.0mm
-      (place D3 161290 -31750 front 0 (PN LED))
-      (place D2 66040 -35560 front 0 (PN LED))
+      (place D3 169545 -45085 front 0 (PN LED))
+      (place D2 74295 -48895 front 0 (PN LED))
     )
     (component Capacitors_THT:C_Axial_L22.0mm_D9.5mm_P27.50mm_Horizontal
-      (place C1 127000 -92710 front 180 (PN "0. 66 uF"))
+      (place C1 135255 -106045 front 180 (PN "0. 66 uF"))
     )
     (component Capacitors_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm
-      (place C3 160020 -143510 front 0 (PN "0.1 uF"))
+      (place C3 168275 -156845 front 0 (PN "0.1 uF"))
     )
     (component Resistors_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P30.48mm_Horizontal
-      (place D1 72390 -101600 front 270 (PN BY127))
-      (place D4 160020 -96520 front 270 (PN BY127))
-      (place R1 67310 -59690 front 0 (PN 1k))
-    )
-    (component "Opto-Devices:IRReceiver_Vishay_MINICAST-3pin"
-      (place D5 50800 -78740 front 0 (PN Q_Thyristor_AGK))
-      (place D6 175260 -78740 front 0 (PN Q_Thyristor_AGK))
+      (place D1 80645 -114935 front 270 (PN BY127))
+      (place D4 168275 -109855 front 270 (PN BY127))
+      (place R1 75565 -73025 front 0 (PN 1k))
     )
     (component Connectors:Banana_Jack_1Pin
-      (place J1 115570 -15240 front 0 (PN CONN_01X01))
-      (place J2 184150 -168910 front 0 (PN CONN_01X01))
-      (place J3 183515 -139700 front 0 (PN CONN_01X01))
-      (place J4 60960 -161290 front 0 (PN CONN_01X01))
+      (place J1 123825 -28575 front 0 (PN CONN_01X01))
+      (place J2 192405 -182245 front 0 (PN CONN_01X01))
+      (place J3 191770 -153035 front 0 (PN CONN_01X01))
+      (place J4 69215 -174625 front 0 (PN CONN_01X01))
     )
     (component Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal
-      (place L1 83820 -16510 front 180 (PN "1 uH"))
-      (place R3 113665 -150495 front 270 (PN 390))
+      (place L1 92075 -29845 front 180 (PN "1 uH"))
+      (place R3 121920 -163830 front 270 (PN 390))
     )
     (component Resistors_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P30.48mm_Horizontal::1
-      (place R2 162560 -60960 front 180 (PN 1k))
+      (place R2 170815 -74295 front 180 (PN 1k))
+    )
+    (component "Opto-Devices:IRReceiver_Vishay_MINICAST-3pin"
+      (place D7 75565 -102235 front 0 (PN Q_Thyristor_KAG))
+      (place D8 184150 -100330 front 0 (PN Q_Thyristor_KAG))
     )
   )
   (library
@@ -144,31 +144,6 @@
       (pin Round[A]Pad_2500_um 1 0 0)
       (pin Round[A]Pad_2500_um 2 30480 0)
     )
-    (image "Opto-Devices:IRReceiver_Vishay_MINICAST-3pin"
-      (outline (path signal 120  5140 1160  5140 1500))
-      (outline (path signal 120  5140 1500  -60 1500))
-      (outline (path signal 120  -60 1500  -60 1160))
-      (outline (path signal 120  5140 -1160  5140 -1500))
-      (outline (path signal 120  5140 -1500  -60 -1500))
-      (outline (path signal 120  -60 -1500  -60 -1160))
-      (outline (path signal 100  40 1400  5040 1400))
-      (outline (path signal 100  5040 1400  5040 -1400))
-      (outline (path signal 100  5040 -1400  40 -1400))
-      (outline (path signal 100  40 -1400  40 1400))
-      (outline (path signal 120  770 -3150  370 -3150))
-      (outline (path signal 120  770 -3150  770 -3550))
-      (outline (path signal 120  770 -3150  -30 -3950))
-      (outline (path signal 120  1770 -3550  970 -4350))
-      (outline (path signal 120  1770 -3550  1770 -3950))
-      (outline (path signal 120  1770 -3550  1370 -3550))
-      (outline (path signal 50  -1150 1650  6230 1650))
-      (outline (path signal 50  -1150 1650  -1150 -3700))
-      (outline (path signal 50  6230 -3700  6230 1650))
-      (outline (path signal 50  6230 -3700  -1150 -3700))
-      (pin Round[A]Pad_2000_um 1 0 0)
-      (pin Round[A]Pad_2000_um 2 2540 0)
-      (pin Round[A]Pad_2000_um 3 5080 0)
-    )
     (image Connectors:Banana_Jack_1Pin
       (outline (path signal 50  5750 0  5468.57 -1776.85  4651.85 -3379.76  3379.76 -4651.85
             1776.85 -5468.57  0 -5750  -1776.85 -5468.57  -3379.76 -4651.85
@@ -232,6 +207,31 @@
       (pin Round[A]Pad_2400_um 1 0 0)
       (pin Oval[A]Pad_2400x2400_um 2 30480 0)
     )
+    (image "Opto-Devices:IRReceiver_Vishay_MINICAST-3pin"
+      (outline (path signal 120  5140 1160  5140 1500))
+      (outline (path signal 120  5140 1500  -60 1500))
+      (outline (path signal 120  -60 1500  -60 1160))
+      (outline (path signal 120  5140 -1160  5140 -1500))
+      (outline (path signal 120  5140 -1500  -60 -1500))
+      (outline (path signal 120  -60 -1500  -60 -1160))
+      (outline (path signal 100  40 1400  5040 1400))
+      (outline (path signal 100  5040 1400  5040 -1400))
+      (outline (path signal 100  5040 -1400  40 -1400))
+      (outline (path signal 100  40 -1400  40 1400))
+      (outline (path signal 120  770 -3150  370 -3150))
+      (outline (path signal 120  770 -3150  770 -3550))
+      (outline (path signal 120  770 -3150  -30 -3950))
+      (outline (path signal 120  1770 -3550  970 -4350))
+      (outline (path signal 120  1770 -3550  1770 -3950))
+      (outline (path signal 120  1770 -3550  1370 -3550))
+      (outline (path signal 50  -1150 1650  6230 1650))
+      (outline (path signal 50  -1150 1650  -1150 -3700))
+      (outline (path signal 50  6230 -3700  6230 1650))
+      (outline (path signal 50  6230 -3700  -1150 -3700))
+      (pin Round[A]Pad_2000_um 1 0 0)
+      (pin Round[A]Pad_2000_um 2 2540 0)
+      (pin Round[A]Pad_2000_um 3 5080 0)
+    )
     (padstack Round[A]Pad_10160_um
       (shape (circle F.Cu 10160))
       (shape (circle B.Cu 10160))
@@ -270,10 +270,10 @@
   )
   (network
     (net "Net-(C1-Pad1)"
-      (pins C1-1 D6-1 R2-2)
+      (pins C1-1 R2-2 D8-2)
     )
     (net "Net-(C1-Pad2)"
-      (pins C1-2 D5-1 R1-2)
+      (pins C1-2 R1-2 D7-2)
     )
     (net "Net-(C3-Pad1)"
       (pins C3-1 D1-2 D4-2 R3-1)
@@ -282,7 +282,7 @@
       (pins C3-2 J3-1)
     )
     (net "Net-(D1-Pad1)"
-      (pins D1-1 D5-2)
+      (pins D1-1 D7-3)
     )
     (net "Net-(D2-Pad1)"
       (pins D2-1 R1-1)
@@ -297,10 +297,10 @@
       (pins D3-2 J1-1 L1-1)
     )
     (net "Net-(D4-Pad1)"
-      (pins D4-1 D6-2)
+      (pins D4-1 D8-3)
     )
     (net GND
-      (pins D5-3 D6-3 J2-1 J4-1 R3-2)
+      (pins J2-1 J4-1 R3-2 D7-1 D8-1)
     )
     (class kicad_default "" GND "Net-(C1-Pad1)" "Net-(C1-Pad2)" "Net-(C3-Pad1)"
       "Net-(C3-Pad2)" "Net-(D1-Pad1)" "Net-(D2-Pad1)" "Net-(D2-Pad2)" "Net-(D3-Pad1)"
@@ -315,5 +315,8 @@
     )
   )
   (wiring
+    (wire (path B.Cu 1200  123825 -29210  123825 -28575)(net VCC)(type protect))
+    (wire (path B.Cu 1200  123190 -29845  123825 -29210)(net VCC)(type protect))
+    (wire (path B.Cu 1200  189230 -179070  192405 -182245)(net GND)(type protect))
   )
 )
