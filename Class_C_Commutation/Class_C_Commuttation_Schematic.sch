@@ -1,0 +1,365 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Class C Commutation"
+Date "25-07-2017"
+Rev ""
+Comp "D.J. Sanghvi"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LED D2
+U 1 1 5976E8FF
+P 5150 2100
+F 0 "D2" H 5150 2200 50  0000 C CNN
+F 1 "LED" H 5150 2000 50  0000 C CNN
+F 2 "LEDs:LED_D5.0mm" H 5150 2100 50  0001 C CNN
+F 3 "" H 5150 2100 50  0000 C CNN
+	1    5150 2100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D3
+U 1 1 5976EB4A
+P 6650 2100
+F 0 "D3" H 6650 2200 50  0000 C CNN
+F 1 "LED" H 6650 2000 50  0000 C CNN
+F 2 "LEDs:LED_D5.0mm" H 6650 2100 50  0001 C CNN
+F 3 "" H 6650 2100 50  0000 C CNN
+	1    6650 2100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D D1
+U 1 1 5976EDCE
+P 4500 4600
+F 0 "D1" H 4500 4700 50  0000 C CNN
+F 1 "BY127" H 4500 4500 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P30.48mm_Horizontal" H 4500 4600 50  0001 C CNN
+F 3 "" H 4500 4600 50  0000 C CNN
+	1    4500 4600
+	0    1    1    0   
+$EndComp
+$Comp
+L D D4
+U 1 1 5976F04D
+P 7300 4600
+F 0 "D4" H 7300 4700 50  0000 C CNN
+F 1 "BY127" H 7300 4500 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P30.48mm_Horizontal" H 7300 4600 50  0001 C CNN
+F 3 "" H 7300 4600 50  0000 C CNN
+	1    7300 4600
+	0    1    1    0   
+$EndComp
+$Comp
+L C C1
+U 1 1 5976F0AA
+P 5850 3000
+F 0 "C1" H 5875 3100 50  0000 L CNN
+F 1 "0. 66 uF" H 5875 2900 50  0000 L CNN
+F 2 "Capacitors_THT:C_Axial_L22.0mm_D9.5mm_P27.50mm_Horizontal" H 5888 2850 50  0001 C CNN
+F 3 "" H 5850 3000 50  0000 C CNN
+	1    5850 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L C C3
+U 1 1 5976F168
+P 8050 4950
+F 0 "C3" H 8075 5050 50  0000 L CNN
+F 1 "0.1 uF" H 8075 4850 50  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 8088 4800 50  0001 C CNN
+F 3 "" H 8050 4950 50  0000 C CNN
+	1    8050 4950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R1
+U 1 1 5976F24C
+P 5150 2600
+F 0 "R1" V 5230 2600 50  0000 C CNN
+F 1 "1k" V 5150 2600 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P30.48mm_Horizontal" V 5080 2600 50  0001 C CNN
+F 3 "" H 5150 2600 50  0000 C CNN
+	1    5150 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 5976F3C9
+P 6650 2650
+F 0 "R2" V 6730 2650 50  0000 C CNN
+F 1 "1k" V 6650 2650 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P30.48mm_Horizontal" V 6580 2650 50  0001 C CNN
+F 3 "" H 6650 2650 50  0000 C CNN
+	1    6650 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 5976F3F6
+P 7300 5400
+F 0 "R3" V 7380 5400 50  0000 C CNN
+F 1 "390" V 7300 5400 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" V 7230 5400 50  0001 C CNN
+F 3 "" H 7300 5400 50  0000 C CNN
+	1    7300 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 950  5150 1200
+Wire Wire Line
+	5150 950  6650 950 
+Wire Wire Line
+	6650 950  6650 1950
+Wire Wire Line
+	5150 2250 5150 2450
+Wire Wire Line
+	5150 3350 5150 2750
+Wire Wire Line
+	5000 3350 5150 3350
+Wire Wire Line
+	5150 3000 5700 3000
+Connection ~ 5150 3000
+Connection ~ 5600 3000
+Wire Wire Line
+	6650 2800 6650 3150
+Wire Wire Line
+	6650 3150 6700 3150
+Wire Wire Line
+	6700 3150 6700 3500
+Wire Wire Line
+	6000 3000 6650 3000
+Connection ~ 6650 3000
+Connection ~ 6150 3000
+Wire Wire Line
+	4500 4150 4850 4150
+Wire Wire Line
+	4500 4150 4500 4450
+Wire Wire Line
+	6900 4100 7300 4100
+Wire Wire Line
+	7300 4100 7300 4450
+Wire Wire Line
+	4500 4750 4500 4950
+Wire Wire Line
+	4500 4950 7900 4950
+Wire Wire Line
+	7300 4750 7300 5250
+Connection ~ 7300 4950
+Wire Wire Line
+	5000 4300 6700 4300
+Wire Wire Line
+	6700 4300 6700 4250
+Wire Wire Line
+	5100 4300 5100 5600
+Wire Wire Line
+	5100 5600 8550 5600
+Wire Wire Line
+	7300 5600 7300 5550
+Wire Wire Line
+	8200 4950 8500 4950
+$Comp
+L GND #PWR01
+U 1 1 5977170A
+P 8500 5650
+F 0 "#PWR01" H 8500 5400 50  0001 C CNN
+F 1 "GND" H 8500 5500 50  0000 C CNN
+F 2 "" H 8500 5650 50  0000 C CNN
+F 3 "" H 8500 5650 50  0000 C CNN
+	1    8500 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR02
+U 1 1 59771AED
+P 6050 750
+F 0 "#PWR02" H 6050 600 50  0001 C CNN
+F 1 "VCC" H 6050 900 50  0000 C CNN
+F 2 "" H 6050 750 50  0000 C CNN
+F 3 "" H 6050 750 50  0000 C CNN
+	1    6050 750 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 750  6050 1150
+Connection ~ 6050 950 
+Wire Wire Line
+	8500 5600 8500 5650
+Connection ~ 7300 5600
+$Comp
+L PWR_FLAG #FLG03
+U 1 1 59774A87
+P 6400 900
+F 0 "#FLG03" H 6400 995 50  0001 C CNN
+F 1 "PWR_FLAG" H 6400 1080 50  0000 C CNN
+F 2 "" H 6400 900 50  0000 C CNN
+F 3 "" H 6400 900 50  0000 C CNN
+	1    6400 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG04
+U 1 1 59774FF0
+P 8350 5550
+F 0 "#FLG04" H 8350 5645 50  0001 C CNN
+F 1 "PWR_FLAG" H 8350 5730 50  0000 C CNN
+F 2 "" H 8350 5550 50  0000 C CNN
+F 3 "" H 8350 5550 50  0000 C CNN
+	1    8350 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 5550 8350 5600
+Connection ~ 8350 5600
+Wire Wire Line
+	6400 900  6400 950 
+Connection ~ 6400 950 
+Wire Wire Line
+	8500 4950 8500 5100
+Wire Wire Line
+	8500 5100 8650 5100
+Wire Wire Line
+	8550 5600 8550 5200
+Connection ~ 8500 5600
+$Comp
+L Q_Thyristor_AGK D5
+U 1 1 59E19299
+P 5000 3700
+F 0 "D5" H 5075 3725 50  0000 L CNN
+F 1 "Q_Thyristor_AGK" H 5075 3650 50  0000 L CNN
+F 2 "Opto-Devices:IRReceiver_Vishay_MINICAST-3pin" V 5000 3700 50  0001 C CNN
+F 3 "" V 5000 3700 50  0001 C CNN
+	1    5000 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_Thyristor_AGK D6
+U 1 1 59E19844
+P 6750 3650
+F 0 "D6" H 6825 3675 50  0000 L CNN
+F 1 "Q_Thyristor_AGK" H 6825 3600 50  0000 L CNN
+F 2 "Opto-Devices:IRReceiver_Vishay_MINICAST-3pin" V 6750 3650 50  0001 C CNN
+F 3 "" V 6750 3650 50  0001 C CNN
+	1    6750 3650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 3550 5000 3350
+Wire Wire Line
+	5000 3850 5000 4300
+Connection ~ 5100 4300
+Wire Wire Line
+	6750 3800 6750 4250
+Wire Wire Line
+	6750 4250 6700 4250
+Wire Wire Line
+	6700 3500 6750 3500
+Wire Wire Line
+	4850 4150 4850 3800
+Wire Wire Line
+	6900 3750 6900 4100
+$Comp
+L L L1
+U 1 1 59E1A24A
+P 5150 1350
+F 0 "L1" V 5100 1350 50  0000 C CNN
+F 1 "1 uH" V 5225 1350 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" H 5150 1350 50  0001 C CNN
+F 3 "" H 5150 1350 50  0001 C CNN
+	1    5150 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 1500 5150 1950
+Wire Wire Line
+	6650 2250 6650 2500
+$Comp
+L CONN_01X01 J3
+U 1 1 59E1C28B
+P 8850 5100
+F 0 "J3" H 8850 5200 50  0000 C CNN
+F 1 "CONN_01X01" V 8950 5100 50  0000 C CNN
+F 2 "Connectors:Banana_Jack_1Pin" H 8850 5100 50  0001 C CNN
+F 3 "" H 8850 5100 50  0001 C CNN
+	1    8850 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 J4
+U 1 1 59E1C320
+P 9150 5400
+F 0 "J4" H 9150 5500 50  0000 C CNN
+F 1 "CONN_01X01" V 9250 5400 50  0000 C CNN
+F 2 "Connectors:Banana_Jack_1Pin" H 9150 5400 50  0001 C CNN
+F 3 "" H 9150 5400 50  0001 C CNN
+	1    9150 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 J1
+U 1 1 59E1CBC9
+P 6050 1350
+F 0 "J1" H 6050 1450 50  0000 C CNN
+F 1 "CONN_01X01" V 6150 1350 50  0000 C CNN
+F 2 "Connectors:Banana_Jack_1Pin" H 6050 1350 50  0001 C CNN
+F 3 "" H 6050 1350 50  0001 C CNN
+	1    6050 1350
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_01X01 J2
+U 1 1 59E1D0FB
+P 8000 6000
+F 0 "J2" H 8000 6100 50  0000 C CNN
+F 1 "CONN_01X01" V 8100 6000 50  0000 C CNN
+F 2 "Connectors:Banana_Jack_1Pin" H 8000 6000 50  0001 C CNN
+F 3 "" H 8000 6000 50  0001 C CNN
+	1    8000 6000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8950 5400 8600 5400
+Wire Wire Line
+	8600 5400 8600 5200
+Wire Wire Line
+	8600 5200 8550 5200
+Wire Wire Line
+	8000 5800 8000 5600
+Connection ~ 8000 5600
+$EndSCHEMATC
