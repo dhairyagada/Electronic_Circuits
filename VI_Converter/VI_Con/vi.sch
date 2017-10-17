@@ -1,0 +1,356 @@
+EESchema Schematic File Version 2
+LIBS:vi-rescue
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:vi-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LM741-RESCUE-vi U1
+U 1 1 59E3B66D
+P 5750 3450
+F 0 "U1" H 5750 3700 50  0000 L CNN
+F 1 "LM741" H 5750 3600 50  0000 L CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm" H 5800 3500 50  0001 C CNN
+F 3 "" H 5900 3600 50  0001 C CNN
+	1    5750 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R12
+U 1 1 59E3B6C1
+P 5050 3550
+F 0 "R12" V 5130 3550 50  0000 C CNN
+F 1 "10" V 5050 3550 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" V 4980 3550 50  0001 C CNN
+F 3 "" H 5050 3550 50  0001 C CNN
+	1    5050 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L R R11
+U 1 1 59E3B72E
+P 4650 3550
+F 0 "R11" V 4730 3550 50  0000 C CNN
+F 1 "240" V 4650 3550 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" V 4580 3550 50  0001 C CNN
+F 3 "" H 4650 3550 50  0001 C CNN
+	1    4650 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L R R21
+U 1 1 59E3B78F
+P 5350 2900
+F 0 "R21" V 5430 2900 50  0000 C CNN
+F 1 "240" V 5350 2900 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" V 5280 2900 50  0001 C CNN
+F 3 "" H 5350 2900 50  0001 C CNN
+	1    5350 2900
+	0    1    1    0   
+$EndComp
+$Comp
+L R R22
+U 1 1 59E3B7DA
+P 5800 2900
+F 0 "R22" V 5880 2900 50  0000 C CNN
+F 1 "10" V 5800 2900 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" V 5730 2900 50  0001 C CNN
+F 3 "" H 5800 2900 50  0001 C CNN
+	1    5800 2900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5200 3550 5450 3550
+Wire Wire Line
+	4900 3550 4800 3550
+Wire Wire Line
+	4500 3550 4200 3550
+Wire Wire Line
+	4200 3550 4200 3650
+Text Label 4200 3650 0    60   ~ 0
+gnd
+Wire Wire Line
+	5250 3550 5250 3000
+Wire Wire Line
+	5250 3000 5100 3000
+Wire Wire Line
+	5100 3000 5100 2900
+Wire Wire Line
+	5100 2900 5200 2900
+Connection ~ 5250 3550
+Wire Wire Line
+	5500 2900 5650 2900
+Wire Wire Line
+	5950 2900 6250 2900
+Wire Wire Line
+	5450 3350 5400 3350
+Wire Wire Line
+	5400 3350 5400 4050
+Wire Wire Line
+	5400 3800 5050 3800
+$Comp
+L R R31
+U 1 1 59E3B9F2
+P 5050 4050
+F 0 "R31" V 5130 4050 50  0000 C CNN
+F 1 "240" V 5050 4050 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" V 4980 4050 50  0001 C CNN
+F 3 "" H 5050 4050 50  0001 C CNN
+	1    5050 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R32
+U 1 1 59E3BA2B
+P 5050 4450
+F 0 "R32" V 5130 4450 50  0000 C CNN
+F 1 "10" V 5050 4450 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" V 4980 4450 50  0001 C CNN
+F 3 "" H 5050 4450 50  0001 C CNN
+	1    5050 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R41
+U 1 1 59E3BA6A
+P 5400 4200
+F 0 "R41" V 5480 4200 50  0000 C CNN
+F 1 "240" V 5400 4200 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" V 5330 4200 50  0001 C CNN
+F 3 "" H 5400 4200 50  0001 C CNN
+	1    5400 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R42
+U 1 1 59E3BAB1
+P 5400 4650
+F 0 "R42" V 5480 4650 50  0000 C CNN
+F 1 "10" V 5400 4650 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" V 5330 4650 50  0001 C CNN
+F 3 "" H 5400 4650 50  0001 C CNN
+	1    5400 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R51
+U 1 1 59E3BAEC
+P 5950 3900
+F 0 "R51" V 6030 3900 50  0000 C CNN
+F 1 "240" V 5950 3900 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" V 5880 3900 50  0001 C CNN
+F 3 "" H 5950 3900 50  0001 C CNN
+	1    5950 3900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6250 3900 6100 3900
+Wire Wire Line
+	5050 3800 5050 3900
+Wire Wire Line
+	5050 4200 5050 4300
+Connection ~ 5400 3800
+Wire Wire Line
+	5400 4350 5400 4500
+Wire Wire Line
+	5800 3900 5400 3900
+Connection ~ 5400 3900
+Wire Wire Line
+	5400 4800 5400 4900
+Text Label 5400 4900 0    60   ~ 0
+gnd
+$Comp
+L Conn_01x01 J1
+U 1 1 59E3BD11
+P 4650 5400
+F 0 "J1" H 4650 5500 50  0000 C CNN
+F 1 "Vin" H 4650 5300 50  0000 C CNN
+F 2 "Connectors:Banana_Jack_1Pin" H 4650 5400 50  0001 C CNN
+F 3 "" H 4650 5400 50  0001 C CNN
+	1    4650 5400
+	0    1    1    0   
+$EndComp
+$Comp
+L Conn_01x01 J2
+U 1 1 59E3BD64
+P 5050 5300
+F 0 "J2" H 5050 5400 50  0000 C CNN
+F 1 "GND" H 5050 5200 50  0000 C CNN
+F 2 "Connectors:Banana_Jack_1Pin" H 5050 5300 50  0001 C CNN
+F 3 "" H 5050 5300 50  0001 C CNN
+	1    5050 5300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4650 5200 4650 5050
+Wire Wire Line
+	5050 4600 5050 4700
+Text Label 4650 5100 0    60   ~ 0
+vin
+Text Label 5050 4700 0    60   ~ 0
+vin
+Wire Wire Line
+	5050 5100 5050 5000
+Text Label 5050 5000 0    60   ~ 0
+gnd
+$Comp
+L Conn_01x01 j5
+U 1 1 59E3BFF7
+P 7000 3300
+F 0 "j5" H 7000 3400 50  0000 C CNN
+F 1 "+VCC" H 7000 3200 50  0000 C CNN
+F 2 "Connectors:Banana_Jack_1Pin" H 7000 3300 50  0001 C CNN
+F 3 "" H 7000 3300 50  0001 C CNN
+	1    7000 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x01 J4
+U 1 1 59E3C036
+P 7000 3600
+F 0 "J4" H 7000 3700 50  0000 C CNN
+F 1 "GND" H 7000 3500 50  0000 C CNN
+F 2 "Connectors:Banana_Jack_1Pin" H 7000 3600 50  0001 C CNN
+F 3 "" H 7000 3600 50  0001 C CNN
+	1    7000 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x01 J3
+U 1 1 59E3C085
+P 7000 3900
+F 0 "J3" H 7000 4000 50  0000 C CNN
+F 1 "-VEE" H 7000 3800 50  0000 C CNN
+F 2 "Connectors:Banana_Jack_1Pin" H 7000 3900 50  0001 C CNN
+F 3 "" H 7000 3900 50  0001 C CNN
+	1    7000 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 3600 6650 3600
+Wire Wire Line
+	6650 3900 6800 3900
+Wire Wire Line
+	5650 3750 5650 4100
+Text Label 6650 3600 0    60   ~ 0
+gnd
+$Comp
+L R R52
+U 1 1 59E3C3D0
+P 6400 3900
+F 0 "R52" V 6480 3900 50  0000 C CNN
+F 1 "10" V 6400 3900 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" V 6330 3900 50  0001 C CNN
+F 3 "" H 6400 3900 50  0001 C CNN
+	1    6400 3900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6550 3450 6550 3900
+Wire Wire Line
+	6050 3450 6550 3450
+Wire Wire Line
+	6250 2900 6250 3450
+Connection ~ 6250 3450
+Wire Wire Line
+	5650 2800 5650 3150
+Wire Wire Line
+	6800 2800 6800 3300
+Wire Wire Line
+	5650 2800 6800 2800
+Wire Wire Line
+	5650 4100 6650 4100
+Wire Wire Line
+	6650 4100 6650 3900
+$Comp
+L PWR_FLAG #FLG01
+U 1 1 59E3D4F7
+P 6950 3050
+F 0 "#FLG01" H 6950 3125 50  0001 C CNN
+F 1 "PWR_FLAG" H 6950 3200 50  0000 C CNN
+F 2 "" H 6950 3050 50  0001 C CNN
+F 3 "" H 6950 3050 50  0001 C CNN
+	1    6950 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L PWR_FLAG #FLG02
+U 1 1 59E3D58B
+P 6550 4150
+F 0 "#FLG02" H 6550 4225 50  0001 C CNN
+F 1 "PWR_FLAG" H 6550 4300 50  0000 C CNN
+F 2 "" H 6550 4150 50  0001 C CNN
+F 3 "" H 6550 4150 50  0001 C CNN
+	1    6550 4150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6550 4150 6550 4100
+Connection ~ 6550 4100
+Wire Wire Line
+	6950 3050 6800 3050
+Wire Wire Line
+	6800 3050 6800 3000
+Connection ~ 6800 3000
+$Comp
+L CONN_01X01 J5
+U 1 1 59E4496B
+P 6100 4600
+F 0 "J5" H 6100 4700 50  0000 C CNN
+F 1 "O/P" V 6200 4600 50  0000 C CNN
+F 2 "Connectors:Banana_Jack_1Pin" H 6100 4600 50  0001 C CNN
+F 3 "" H 6100 4600 50  0001 C CNN
+	1    6100 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 4600 5600 4600
+Wire Wire Line
+	5600 4600 5600 3950
+Wire Wire Line
+	5600 3950 5400 3950
+Connection ~ 5400 3950
+$EndSCHEMATC
